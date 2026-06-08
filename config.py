@@ -33,9 +33,9 @@ def cfg():
 
     dataset = 'VOC'
     label_sets = 0
-    input_size = (416, 416)
+    input_size = (256, 256)
     ignore_label = 255
-    batch_size = 4
+    batch_size = 2
     n_steps = 50000
     start_step = 0
     num_workers = 4
@@ -84,7 +84,7 @@ def cfg():
         'log_dir': './runs',
         'init_path': './initmodel/resnet50-19c8e357.pth',
         'VOC': {
-            'data_dir': r'D:\PANet\data\Pascal\VOCdevkit\VOC2012',
+            'data_dir': r'/mnt/d/USST/Code/PSCNet++/Pascal/VOCdevkit/VOC2012',
             'data_split': 'trainaug',
             'val_split': 'val',
         },
