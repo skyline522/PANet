@@ -4,7 +4,7 @@
 
 本项目基于 PANet（Prototype Alignment Network），实现少样本（Few-Shot）的缺陷检测与语义分割，支持Pascal VOC 2012数据集。
 
-项目代码(含项目运行必须的与训练权重模型文件版)链接
+项目代码(含项目运行必须的预训练权重模型文件)链接
 
 https://pan.baidu.com/s/14eW02kU0o1aRzK7rmJ1qFA?pwd=ej4a 提取码: ej4a
 
@@ -34,9 +34,9 @@ https://pan.baidu.com/s/1ZuxBb0Z4BMIuHVRQQHBjig?pwd=yhvv 提取码: yhvv
 
 ### 2.1 硬件环境
 
-显卡：NVIDIA GeForce RTX 4060 Laptop (8GB 显存)
+显卡：NVIDIA GeForce RTX 4060 Laptop (8GB 显存)（推荐8GB显存显卡，显存越大越好）
 
-CUDA 驱动：13.0
+CUDA 驱动：13.0（先查看自己的显卡驱动版本、后续根据显卡版本选择安装合适的PyTorch版本）
 
 操作系统：Windows 11
 
@@ -52,7 +52,7 @@ conda create -n panet python=3.12 -y
 
 ### 2.3 安装CUDA版 PyTorch
 
-清华镜像的pip默认安装CPU版 PyTorch，必须通过conda从pytorch安装CUDA版本。
+清华镜像的pip默认安装CPU版 PyTorch，推荐通过conda从pytorch安装CUDA版本。
 
 ```bash
 conda activate panet
